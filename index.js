@@ -2,15 +2,6 @@
 // Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
 "use strict";
 // add elemnts
-const bgBody = [
-    "#e5e7e9",
-    "#ff4545",
-    "#f8ded3",
-    "#ffc382",
-    "#f5eda6",
-    "#ffcbdc",
-    "#dcf3f3",
-];
 const body = document.body;
 const player = document.querySelector(".player");
 const playerHeader = player.querySelector(".player__header");
@@ -75,9 +66,9 @@ function back(index) {
 function changeSliderContext() {
     sliderContext.style.animationName = "opacity";
     sliderName.textContent =
-        playerPlayList[count].querySelector(".player__title").textContent;
-    sliderTitle.textContent =
         playerPlayList[count].querySelector(".player__song-name").textContent;
+    sliderTitle.textContent =
+        playerPlayList[count].querySelector(".player__title").textContent;
     if (sliderName.textContent.length > 16) {
         const textWrap = document.createElement("span");
         textWrap.className = "text-wrap";

@@ -17,6 +17,10 @@ html *::after {
     box-sizing: inherit;
     scrollbar-width:auto;
 }
+.content{
+    position: relative;
+    overflow: hidden;
+}
 
 body {
     background-image: url("Img/Fondo.jpg");
@@ -65,6 +69,7 @@ body {
     flex-direction: column-reverse;
     background-color: rgba(255, 255, 255, 0.438);
     height: var(--parent-height);
+    box-shadow: 0 2px 6px 1px #0000001f;
 }
 
 .player__header {
