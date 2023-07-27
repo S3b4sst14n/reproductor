@@ -75,9 +75,9 @@ function back(index) {
 function changeSliderContext() {
   sliderContext.style.animationName = "opacity";
   sliderName.textContent =
-    playerPlayList[count].querySelector(".player__title").textContent;
-  sliderTitle.textContent =
     playerPlayList[count].querySelector(".player__song-name").textContent;
+  sliderTitle.textContent =
+    playerPlayList[count].querySelector(".player__title").textContent;
   if (sliderName.textContent.length > 16) {
     const textWrap = document.createElement("span");
     textWrap.className = "text-wrap";

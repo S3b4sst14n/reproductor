@@ -19,7 +19,7 @@ html *::after {
 }
 
 body {
-    background-image: url("Img/Fondo.jpg");
+    background-image: url("Img/background.webp");
     margin: 0;
     height: 100vh;
     display: flex;
@@ -63,9 +63,9 @@ body {
     font-size: 1.22em;
     border-radius: 0.50em;
     flex-direction: column-reverse;
-    background-color: rgba(255, 255, 255, 0.438);
+    background-color: rgba(255, 255, 255, 0.822);
     height: var(--parent-height);
-    box-shadow: 0 2px 6px 1px #0000001f;
+    box-shadow: 0 2px 6px 1px #000000dd;
 }
 
 .player__header {
@@ -81,7 +81,7 @@ body {
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.463);
     padding: 0.95em 0.6em 0 1.2em;
-    box-shadow: 0 2px 6px 1px #0000001f;
+    box-shadow: 0 2px 6px 1px #000000c1;
     transition: height var(--cubic-header), box-shadow var(--duration),
         padding var(--duration) ease-in-out;
 }
